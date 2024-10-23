@@ -3,8 +3,8 @@ import random
 def derivative_k (arr1, arr2, n, k, b):
     sum_all = 0
     for i in range(len(arr1)):
-        sum_all += (k * arr1[i] + b - arr2[i])
-    der = 2 * sum_all * arr1[i] / n
+        sum_all += (k * arr1[i] + b - arr2[i]) * arr1[i]
+    der = 2 * sum_all / n
     return der
 
 def derivative_b (arr1, arr2, n, k, b):
