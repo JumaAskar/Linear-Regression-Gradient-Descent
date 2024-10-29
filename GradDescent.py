@@ -35,7 +35,7 @@ temp_b = 0
 
 points_number = int(input("Enter the number of points.\n"))
 
-for i in range(1, n + 1):
+for i in range(1, points_number + 1):
     points_input = input("Enter the x & y coordinates of the point {0}.\n".format(i))
     points_input = points_input.split(" ")
     x.append(int(points_input[0]))
