@@ -30,9 +30,6 @@ limit = 100
 x = []
 y = []
 
-temp_w = 0
-temp_b = 0
-
 points_number = int(input("Enter the number of points.\n"))
 
 for i in range(1, points_number + 1):
@@ -40,6 +37,9 @@ for i in range(1, points_number + 1):
     points_input = points_input.split(" ")
     x.append(int(points_input[0]))
     y.append(int(points_input[1]))
+
+temp_w = 0
+temp_b = 0
 
 w = 0
 b = 0
